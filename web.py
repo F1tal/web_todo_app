@@ -24,7 +24,3 @@ for index, todo in enumerate(todos):
 
 st.text_input(label = "3", placeholder="Введите план", on_change=add_todo, key="new_todo",
               label_visibility = 'collapsed')
-
-print("hello")
-
-st.session_state
