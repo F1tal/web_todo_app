@@ -12,7 +12,7 @@ def add_todo():
 
 
 st.title("Список задач")
-st.write("*Для завершения задачи необходимо нажать на галочку")
+st.write("*:grey[*Для завершения задачи необходимо нажать на галочку ☑]*")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -24,3 +24,7 @@ for index, todo in enumerate(todos):
 
 st.text_input(label = "3", placeholder="Введите план", on_change=add_todo, key="new_todo",
               label_visibility = 'collapsed')
+
+col1, col2, col3 = st.columns(3)
+
+st.image("kat_pic.jpg")
