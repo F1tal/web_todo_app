@@ -11,9 +11,8 @@ def add_todo():
     print(todo)
 
 
-st.title("Мое приложение")
-st.subheader("А это подзаголовок")
-st.write("Приложение для повышения вашей эффективности")
+st.title("Список задач")
+st.write("*Для завершения задачи необходимо нажать на галочку")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
