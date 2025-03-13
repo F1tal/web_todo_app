@@ -12,7 +12,7 @@ def add_todo():
 
 
 st.title("Список задач")
-st.write("*:grey[*Для завершения задачи необходимо нажать на галочку ☑]*")
+st.write("*:grey[*Шуня пипися вонючка]*")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
